@@ -1,0 +1,343 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffed65a0a62, pid=13068, tid=8236
+#
+# JRE version:  (21.0.8+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.8+9-LTS, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, parallel gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x310a62]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\lombok\lombok-1.18.39-4050.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=c:\Users\Ali Abbas\AppData\Roaming\Code\User\workspaceStorage\35bc57c10440bf47187dad09ace9f516\redhat.java -Daether.dependencyCollector.impl=bf -XX:+UnlockDiagnosticVMOptions -XX:+AllowArchivingWithJavaAgent -XX:+AutoCreateSharedArchive -XX:SharedArchiveFile=c:\Users\Ali Abbas\AppData\Roaming\Code\User\globalStorage\redhat.java\1.45.2025082708\jdtls.jsa c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.7.0.v20250519-0528.jar -configuration c:\Users\Ali Abbas\AppData\Roaming\Code\User\globalStorage\redhat.java\1.45.2025082708\config_win -data c:\Users\Ali Abbas\AppData\Roaming\Code\User\workspaceStorage\35bc57c10440bf47187dad09ace9f516\redhat.java\jdt_ws --pipe=\\.\pipe\lsp-5cb3a67ead225e32bc1d672a859f78cc-sock
+
+Host: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, 4 cores, 11G,  Windows 10 , 64 bit Build 19041 (10.0.19041.5915)
+Time: Wed Sep  3 06:40:24 2025 India Standard Time elapsed time: 0.559945 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000019725bc2b30):  JavaThread "Unknown thread" [_thread_in_vm, id=8236, stack(0x0000001fc7e00000,0x0000001fc7f00000) (1024K)]
+
+Stack: [0x0000001fc7e00000,0x0000001fc7f00000],  sp=0x0000001fc7efee70,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x310a62]
+V  [jvm.dll+0x3113a8]
+V  [jvm.dll+0x67ae99]
+V  [jvm.dll+0x67b106]
+V  [jvm.dll+0x67a481]
+V  [jvm.dll+0x675c38]
+V  [jvm.dll+0x877625]
+V  [jvm.dll+0x3bed71]
+V  [jvm.dll+0x8605d3]
+V  [jvm.dll+0x4530ee]
+V  [jvm.dll+0x454d31]
+C  [jli.dll+0x5278]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17374]
+C  [ntdll.dll+0x4cc91]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x0000ab0e667d9f86, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000001
+RSP=0x0000001fc7efee70, RBP=0x0000000000000001, RSI=0x0000000000000000, RDI=0x0000019725be5620
+R8 =0x0000000000000001, R9 =0x0000000000000002, R10=0x0000000000000000, R11=0x0000000000000246
+R12=0x0000000000000000, R13=0x0000019723888f80, R14=0x0000000000000002, R15=0x000001973d000000
+RIP=0x00007ffed65a0a62, EFLAGS=0x0000000000010202
+
+XMM[0]=0x0000000000000000 0x0000000000000000
+XMM[1]=0x0000000000000000 0x0000000000000000
+XMM[2]=0x0000000000000000 0x0000000000000000
+XMM[3]=0x0000000000000000 0x0000000000000000
+XMM[4]=0x0000000000000000 0x0000000000000000
+XMM[5]=0x0000000000000000 0x0000000000000000
+XMM[6]=0x0000000000000000 0x0000000000000000
+XMM[7]=0x0000000000000000 0x0000000000000000
+XMM[8]=0x0000000000000000 0x0000000000000000
+XMM[9]=0x0000000000000000 0x0000000000000000
+XMM[10]=0x0000000000000000 0x0000000000000000
+XMM[11]=0x0000000000000000 0x0000000000000000
+XMM[12]=0x0000000000000000 0x0000000000000000
+XMM[13]=0x0000000000000000 0x0000000000000000
+XMM[14]=0x0000000000000000 0x0000000000000000
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001fa0
+
+
+Top of Stack: (sp=0x0000001fc7efee70)
+0x0000001fc7efee70:   0000000803f30000 000001973d000000
+0x0000001fc7efee80:   0000019740f30000 0000018f3d000000
+0x0000001fc7efee90:   000001973d000000 0000000000000001
+0x0000001fc7efeea0:   0000001fc7efefb0 0000000000000000
+0x0000001fc7efeeb0:   0000ab0e667d9c16 0000018f3d000000
+0x0000001fc7efeec0:   0000ab0e667d9f86 0000001fc7eff100
+0x0000001fc7efeed0:   0000019725be5620 00007ffed65a13a8
+0x0000001fc7efeee0:   000001973dba0000 0000000000000000
+0x0000001fc7efeef0:   0000000000000000 0000000000000000
+0x0000001fc7efef00:   000001973d000000 0000000004000000
+0x0000001fc7efef10:   0000000000000000 0000000000010000
+0x0000001fc7efef20:   0000000000001000 ffffffff25be7600
+0x0000001fc7efef30:   0000019725be5600 00000000000001bc
+0x0000001fc7efef40:   0000ab0e667d9f16 0000019725be5620
+0x0000001fc7efef50:   0000019725be5620 0000000000000002
+0x0000001fc7efef60:   0000000000000000 0000019725be56e0
+0x0000001fc7efef70:   0000001fc7eff100 00007ffed690ae99
+0x0000001fc7efef80:   0000000000000002 00007ffed6ecdbb0
+0x0000001fc7efef90:   0000019725be5620 0000019725be5620
+0x0000001fc7efefa0:   0000001fc7efefb0 0000000000001000
+0x0000001fc7efefb0:   000001973d000000 0000000004000000
+0x0000001fc7efefc0:   0000000000000000 0000000000010000
+0x0000001fc7efefd0:   0000000000001000 ffffffff25be7600
+0x0000001fc7efefe0:   0000019725be5600 0000019725be56e0
+0x0000001fc7efeff0:   00000197238a37d0 00007ffed690b106
+0x0000001fc7eff000:   0000000000000000 0000000004000000
+0x0000001fc7eff010:   00000197238a37d0 0000000000000000
+0x0000001fc7eff020:   0000001fc7eff030 0000001fc7eff068
+0x0000001fc7eff030:   000001973d000000 0000000004000000
+0x0000001fc7eff040:   0000000000000000 0000000000010000
+0x0000001fc7eff050:   0000000000001000 ffffffff25be7600
+0x0000001fc7eff060:   0000019725be5600 0000019741000000 
+
+Instructions: (pc=0x00007ffed65a0a62)
+0x00007ffed65a0962:   83 a8 01 00 00 0f 85 a1 00 00 00 0f b6 05 fb 0b
+0x00007ffed65a0972:   92 00 38 83 a9 01 00 00 0f 85 8e 00 00 00 80 bb
+0x00007ffed65a0982:   aa 01 00 00 00 75 2d 80 3d 05 c3 98 00 00 74 24
+0x00007ffed65a0992:   48 8b 05 bf c8 97 00 48 85 c0 0f 84 84 00 00 00
+0x00007ffed65a09a2:   48 8d 0d 87 83 71 00 e8 52 5a db ff 32 c0 48 83
+0x00007ffed65a09b2:   c4 20 5b c3 80 bb 01 03 00 00 00 75 1f 48 8b 05
+0x00007ffed65a09c2:   8a c8 97 00 c6 05 93 d1 92 00 00 48 85 c0 74 0c
+0x00007ffed65a09d2:   48 8d 0d 97 83 71 00 e8 e2 0a db ff 80 bb 02 03
+0x00007ffed65a09e2:   00 00 00 75 1f 48 8b 05 62 c8 97 00 c6 05 6c d1
+0x00007ffed65a09f2:   92 00 00 48 85 c0 74 0c 48 8d 0d df 83 71 00 e8
+0x00007ffed65a0a02:   ba 0a db ff b0 01 48 83 c4 20 5b c3 48 8b 05 3b
+0x00007ffed65a0a12:   c8 97 00 48 85 c0 74 0c 48 8d 0d 6f 82 71 00 e8
+0x00007ffed65a0a22:   9a 0a db ff 32 c0 48 83 c4 20 5b c3 cc cc 48 89
+0x00007ffed65a0a32:   5c 24 10 48 89 6c 24 18 48 89 74 24 20 57 48 83
+0x00007ffed65a0a42:   ec 60 48 8b 05 5d b9 94 00 48 33 c4 48 89 44 24
+0x00007ffed65a0a52:   50 80 3d 46 07 92 00 00 0f b6 ea 48 8b f1 74 17
+0x00007ffed65a0a62:   80 39 00 75 12 48 8b 0d 92 0e 98 00 48 8b 01 ff
+0x00007ffed65a0a72:   50 20 48 8b d8 eb 08 48 8b 59 18 48 83 c3 04 48
+0x00007ffed65a0a82:   8b 05 78 0f 98 00 40 b7 01 48 85 c0 74 0f 48 8b
+0x00007ffed65a0a92:   d3 48 8d 0d b6 6b 71 00 e8 a1 bc f0 ff 48 8d 54
+0x00007ffed65a0aa2:   24 20 48 8b cb e8 c4 fd 3b 00 85 c0 74 28 40 84
+0x00007ffed65a0ab2:   ed 74 23 48 8b 05 9c c7 97 00 48 85 c0 74 47 48
+0x00007ffed65a0ac2:   8b d3 48 8d 0d ad 6b 71 00 e8 30 59 db ff 40 32
+0x00007ffed65a0ad2:   ff e9 12 01 00 00 80 3e 02 75 33 48 8b cb e8 9b
+0x00007ffed65a0ae2:   9b 3b 00 84 c0 0f 85 fd 00 00 00 48 8b 05 64 c7
+0x00007ffed65a0af2:   97 00 48 85 c0 74 0f 48 8b d3 48 8d 0d a5 6b 71
+0x00007ffed65a0b02:   00 e8 f8 58 db ff 40 32 ff e9 da 00 00 00 48 8b
+0x00007ffed65a0b12:   46 08 48 85 c0 74 07 48 3b 44 24 40 75 0f 48 63
+0x00007ffed65a0b22:   44 24 34 48 39 46 10 0f 84 bb 00 00 00 48 8b 05
+0x00007ffed65a0b32:   22 c7 97 00 40 32 ff 40 38 3d d3 be 98 00 74 2b
+0x00007ffed65a0b42:   48 85 c0 0f 84 9f 00 00 00 48 8b 46 08 48 8d 15
+0x00007ffed65a0b52:   72 6b 71 00 48 3b 44 24 40 48 8d 0d 7e 6b 71 00 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffed6ed11c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000019725be22a0 WorkerThread "GC Thread#0"                     [id=13052, stack(0x0000001fc7f00000,0x0000001fc8000000) (1024K)]
+
+=>0x0000019725bc2b30 (exited) JavaThread "Unknown thread"    [_thread_in_vm, id=8236, stack(0x0000001fc7e00000,0x0000001fc7f00000) (1024K)]
+Total: 2
+
+Threads with active compile tasks:
+Total: 0
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ CPUs: 4 total, 4 available
+ Memory: 11847M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Alignments: Space 512K, Generation 512K, Heap 2M
+ Heap Min Capacity: 100M
+ Heap Initial Capacity: 100M
+ Heap Max Capacity: 2G
+ Pre-touch: Disabled
+ Parallel Workers: 4
+
+Heap:
+ PSYoungGen      total 29696K, used 0K [0x00000000d5580000, 0x00000000d7680000, 0x0000000100000000)
+  eden space 25600K, 0% used [0x00000000d5580000,0x00000000d5580000,0x00000000d6e80000)
+  from space 4096K, 0% used [0x00000000d7280000,0x00000000d7280000,0x00000000d7680000)
+  to   space 4096K, 0% used [0x00000000d6e80000,0x00000000d6e80000,0x00000000d7280000)
+ ParOldGen       total 68608K, used 0K [0x0000000080000000, 0x0000000084300000, 0x00000000d5580000)
+  object space 68608K, 0% used [0x0000000080000000,0x0000000080000000,0x0000000084300000)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffed69bbba9]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.065 Loaded shared library c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff75b8a0000 - 0x00007ff75b8ae000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\java.exe
+0x00007fff08bd0000 - 0x00007fff08dc8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007fff07c30000 - 0x00007fff07cf2000 	C:\Windows\System32\KERNEL32.DLL
+0x00007fff066b0000 - 0x00007fff069a7000 	C:\Windows\System32\KERNELBASE.dll
+0x00007fff06260000 - 0x00007fff06360000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffeff480000 - 0x00007ffeff498000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\jli.dll
+0x00007fff072f0000 - 0x00007fff0748d000 	C:\Windows\System32\USER32.dll
+0x00007fff06460000 - 0x00007fff06482000 	C:\Windows\System32\win32u.dll
+0x00007fff07800000 - 0x00007fff0782b000 	C:\Windows\System32\GDI32.dll
+0x00007fff06ad0000 - 0x00007fff06be9000 	C:\Windows\System32\gdi32full.dll
+0x00007fff069b0000 - 0x00007fff06a4d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffef2530000 - 0x00007ffef254e000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\VCRUNTIME140.dll
+0x00007ffef6550000 - 0x00007ffef67ea000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.5915_none_60b4b9d171f9c7c7\COMCTL32.dll
+0x00007fff08380000 - 0x00007fff0841e000 	C:\Windows\System32\msvcrt.dll
+0x00007fff08350000 - 0x00007fff0837f000 	C:\Windows\System32\IMM32.DLL
+0x00007fff02630000 - 0x00007fff0263c000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\vcruntime140_1.dll
+0x00007ffeef990000 - 0x00007ffeefa1d000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\msvcp140.dll
+0x00007ffed6290000 - 0x00007ffed7027000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\server\jvm.dll
+0x00007fff07b70000 - 0x00007fff07c21000 	C:\Windows\System32\ADVAPI32.dll
+0x00007fff07830000 - 0x00007fff078cf000 	C:\Windows\System32\sechost.dll
+0x00007fff07640000 - 0x00007fff07766000 	C:\Windows\System32\RPCRT4.dll
+0x00007fff06490000 - 0x00007fff064b7000 	C:\Windows\System32\bcrypt.dll
+0x00007fff082e0000 - 0x00007fff0834b000 	C:\Windows\System32\WS2_32.dll
+0x00007fff05760000 - 0x00007fff057ab000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ffee6620000 - 0x00007ffee6647000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffef68b0000 - 0x00007ffef68ba000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007fff05620000 - 0x00007fff05632000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007fff040a0000 - 0x00007fff040b2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffeff300000 - 0x00007ffeff30a000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\jimage.dll
+0x00007ffef68f0000 - 0x00007ffef6af1000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffef09b0000 - 0x00007ffef09e4000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007fff064c0000 - 0x00007fff06542000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffef7390000 - 0x00007ffef739f000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\instrument.dll
+0x00007ffef24d0000 - 0x00007ffef24ef000 	c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\java.dll
+
+JVMTI agents:
+c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\lombok\lombok-1.18.39-4050.jar path:none, loaded, not initialized, instrumentlib options:none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.5915_none_60b4b9d171f9c7c7;c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\jre\21.0.8-win32-x86_64\bin\server
+
+VM Arguments:
+jvm_args: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\lombok\lombok-1.18.39-4050.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=c:\Users\Ali Abbas\AppData\Roaming\Code\User\workspaceStorage\35bc57c10440bf47187dad09ace9f516\redhat.java -Daether.dependencyCollector.impl=bf -XX:+UnlockDiagnosticVMOptions -XX:+AllowArchivingWithJavaAgent -XX:+AutoCreateSharedArchive -XX:SharedArchiveFile=c:\Users\Ali Abbas\AppData\Roaming\Code\User\globalStorage\redhat.java\1.45.2025082708\jdtls.jsa 
+java_command: c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.7.0.v20250519-0528.jar -configuration c:\Users\Ali Abbas\AppData\Roaming\Code\User\globalStorage\redhat.java\1.45.2025082708\config_win -data c:\Users\Ali Abbas\AppData\Roaming\Code\User\workspaceStorage\35bc57c10440bf47187dad09ace9f516\redhat.java\jdt_ws --pipe=\\.\pipe\lsp-5cb3a67ead225e32bc1d672a859f78cc-sock
+java_class_path (initial): c:\Users\Ali Abbas\.vscode\extensions\redhat.java-1.45.2025082708-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.7.0.v20250519-0528.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+    uintx AdaptiveSizePolicyWeight                 = 90                                        {product} {command line}
+     bool AllowArchivingWithJavaAgent              = true                             {JVMCI diagnostic} {command line}
+     bool AutoCreateSharedArchive                  = true                                {JVMCI product} {command line}
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+    uintx GCTimeRatio                              = 4                                         {product} {command line}
+     bool HeapDumpOnOutOfMemoryError               = true                                   {manageable} {command line}
+    ccstr HeapDumpPath                             = c:\Users\Ali Abbas\AppData\Roaming\Code\User\workspaceStorage\35bc57c10440bf47187dad09ace9f516\redhat.java         {manageable} {command line}
+   size_t InitialHeapSize                          = 104857600                                 {product} {command line}
+   size_t MaxHeapSize                              = 2147483648                                {product} {command line}
+   size_t MaxNewSize                               = 715653120                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 524288                                    {product} {ergonomic}
+   size_t MinHeapSize                              = 104857600                                 {product} {command line}
+   size_t NewSize                                  = 34603008                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+   size_t OldSize                                  = 70254592                                  {product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+    ccstr SharedArchiveFile                        = c:\Users\Ali Abbas\AppData\Roaming\Code\User\globalStorage\redhat.java\1.45.2025082708\jdtls.jsa      {JVMCI product} {command line}
+   size_t SoftMaxHeapSize                          = 2147483648                             {manageable} {ergonomic}
+     bool UnlockDiagnosticVMOptions                = true                                   {diagnostic} {command line}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+     bool UseParallelGC                            = true                                      {product} {command line}
+
+Logging:
+Log output configuration:
+ #0: stdout all=off uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-21
+PATH=c:\Users\Ali Abbas\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\New folder\flutter;D:\New folder\flutter_windows_3.22.2-stable\flutter\bin;D:\sdk\Sdk;C:\Program Files\nodejs\;E:\Downloads\node-v20.10.0-win-x64\node-v20.10.0-win-x64\node_modules\npm;C:\Windows\System32\cmd.exe;C:\Users\Ali Abbas\AppData\Roaming\npm;C:\Users\Ali Abbas\AppData\Local\Pub\Cache\bin;C:\Program Files\Java\jdk-21;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Python312;C:\Users\Ali Abbas\AppData\Local\pip;D:\web develop;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;E:\Flutter Journy\flutter new\flutter\bin;E:\Flutter Journy\flutter\bin;D:\web develop\new php\php-8.4.4-src;D:\web develop\php;C:\xampp\php;D:\all rs web\php;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Ali Abbas\AppData\Local\Programs\Python\P;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Python312\;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Launcher\;C:\Users\Ali Abbas\AppData\Local\Microsoft\WindowsApps;D:\New folder\flutter;D:\New folder\flutter_windows_3.22.2-stable\flutter\bin;D:\sdk\Sdk;C:\Users\Ali Abbas\AppData\Roaming\npm;D:\New folder\flutter_windows_3.22.2-stable\flutter\bin;C:\Windows\System32\cmd.exe;C:\Users\Ali Abbas\AppData\Roaming\npm;C:\Users\Ali Abbas\AppData\Local\Pub\Cache\bin;C:\Program Files\Java\jdk-21;C:\Program Files\Git\bin;C:\Users\Ali Abbas\AppData\Local\Programs\Python\Python312;C:\Users\Ali Abbas\AppData\Local\pip;D:\web develop;C:\Users\Ali Abbas\AppData\Roaming\Composer\vendor\bin;E:\Flutter Journy\flutter new\flutter\bin;E:\Flutter Journy\flutter\bin;D:\web develop\new php\php-8.4.4-src;D:\web develop\php;C:\Users\Ali Abbas\AppData\Local\Programs\Microsoft VS Code\bin;C:\xampp\php;D:\all rs web\php;C:\Users\Ali Abbas\AppData\Local\Programs\cursor\resources\app\bin
+USERNAME=Ali Abbas
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+TMP=C:\Users\ALIABB~1\AppData\Local\Temp
+TEMP=C:\Users\ALIABB~1\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.5915)
+OS uptime: 0 days 0:04 hours
+Hyper-V role detected
+
+CPU: total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9 microcode 0x21, cx8, cmov, fxsr, ht, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, tsc, tscinvbit, avx, aes, erms, clmul, vzeroupper, clflush, hv, rdtscp, f16c
+Processor Information for the first 4 processors :
+  Max Mhz: 2601, Current Mhz: 2601, Mhz Limit: 2601
+
+Memory: 4k page, system-wide physical 11847M (4703M free)
+TotalPageFile size 30279M (AvailPageFile size 22641M)
+current process WorkingSet (physical memory assigned to process): 74M, peak: 74M
+current process commit charge ("private bytes"): 243M, peak: 243M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.8+9-LTS) for windows-amd64 JRE (21.0.8+9-LTS), built on 2025-07-15T00:00:00Z by "admin" with MS VC++ 17.7 (VS2022)
+
+END.
